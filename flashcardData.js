@@ -90,4 +90,74 @@ let cardList = [
         cardImageHint: '',
         cardImageAnswer: ''
     },
+    {
+        cardID: 9,
+        deckID: 1,
+        cardQuestion: "a + a' = ?",
+        cardHint: "Complement Property",
+        cardAnswer: "a + a' = 1",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
+    {
+        cardID: 10,
+        deckID: 1,
+        cardQuestion: "a * a' = ?",
+        cardHint: "Complement Property",
+        cardAnswer: "a * a' = 0",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
+    {
+        cardID: 11,
+        deckID: 1,
+        cardQuestion: "a + a = ?",
+        cardHint: "Idempotency Property",
+        cardAnswer: "a + a = a",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
+    {
+        cardID: 12,
+        deckID: 1,
+        cardQuestion: "a * a = ?",
+        cardHint: "Idempotency Property",
+        cardAnswer: "a * a = a",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
+    {
+        cardID: 13,
+        deckID: 1,
+        cardQuestion: "(a')' = ?",
+        cardHint: "Involution Property",
+        cardAnswer: "(a')' = a",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
+    {
+        cardID: 14,
+        deckID: 1,
+        cardQuestion: "a(b + c) = ?",
+        cardHint: "Distributive Property",
+        cardAnswer: "a(b + c) = ab + ac",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
+    {
+        cardID: 15,
+        deckID: 1,
+        cardQuestion: "a + bc = ?",
+        cardHint: "Distributive Property",
+        cardAnswer: "a + bc = (a + b)(a + c)",
+        cardImageQuestion: '',
+        cardImageHint: '',
+        cardImageAnswer: ''
+    },
 ];
