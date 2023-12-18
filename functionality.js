@@ -26,8 +26,12 @@ function restartApplication(){
 
 function getDecksList(){
     let deckOptions = '';
-    for (let deck in deckList){
-        deckOptions += `<option value="${deckList[deck].deckID}">${deckList[deck].deckDesc}</option>`
+    let deckArr = JSON.parse(JSON.stringify(deckList));
+
+    deckArr.sort((a, b) => (a.deckDesc > b.deckDesc ? 1 : b.deckDesc > a.deckDesc ? -1 : 0));
+
+    for (let deck in deckArr){
+        deckOptions += `<option value="${deckArr[deck].deckID}">${deckArr[deck].deckDesc}</option>`
     }
 
     return deckOptions;
@@ -119,9 +123,14 @@ function getButtons(cardType){
 
     if(currentCardIndex != 0){
         buttonList += `<button class="card-button" onclick="getPreviousCard()">Previous Card</button>`;
+    } else {
+        buttonList += `<button class="card-button disabled-button" disabled">Previous Card</button>`;
     }
+
     if(currentCardIndex != currentDeckLength - 1){
         buttonList += `<button class="card-button" onclick="getNextCard()">Next Card</button>`;
+    } else {
+        buttonList += `<button class="card-button disabled-button" disabled">Next Card</button>`;
     }
 
     buttonList += `<button class="card-button" onclick="restartApplication()">New Deck</button>`;

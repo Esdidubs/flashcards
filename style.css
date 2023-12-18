@@ -39,6 +39,21 @@ button:active {
 	top: 1px;
 }
 
+.disabled-button {
+	background: none;
+	background-color: #646568;
+}
+
+.disabled-button:active {
+	position: relative;
+	top: 0px;
+}
+
+.disabled-button:hover {
+	background: none;
+	background-color: #646568;
+}
+
 #card-region {
     margin: 30px 0;
 }
