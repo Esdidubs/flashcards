@@ -7,6 +7,14 @@ let deckList = [
     deckID: 2,
     deckDesc: "Harry Potter",
   },
+  {
+    deckID: 3,
+    deckDesc: "Algebra",
+  },
+  {
+    deckID: 4,
+    deckDesc: "Calculus",
+  },
 ];
 
 let cardList = [
@@ -4964,4 +4972,58 @@ let cardList = [
     cardImageHint: "",
     cardImageAnswer: "",
   },
+  {
+    cardID: 476,
+    deckID: 3,
+    cardQuestion: "Quadratic Formula",
+    cardHint: "Don't forget the plus and minus",
+    cardAnswer: "Image showing Quadratic Formula",
+    cardImageQuestion: "",
+    cardImageHint: "",
+    cardImageAnswer: "476-answer.jpg",
+  },
+  {
+    cardID: 477,
+    deckID: 4,
+    cardQuestion: "Graphical depiction of a tangent line to a function",
+    cardHint: "The tangent should be parallel",
+    cardAnswer: "Image showing tangent line",
+    cardImageQuestion: "",
+    cardImageHint: "",
+    cardImageAnswer: "477-answer.png",
+  },
+  {
+    cardID: 478,
+    deckID: 4,
+    cardQuestion: "Graphical depiction of secant getting closer to slope of tangent line",
+    cardHint: "This is a depiction of the limit",
+    cardAnswer: "Gif showing secant getting closer to tangent line",
+    cardImageQuestion: "",
+    cardImageHint: "",
+    cardImageAnswer: "478-answer.gif",
+  },
+  {
+    cardID: 479,
+    deckID: 4,
+    cardQuestion: "Average rate of change of f(x) at x=a",
+    cardHint: "Change in f(x) versus change in x",
+    cardAnswer: "Average rate of change formula",
+    cardImageQuestion: "",
+    cardImageHint: "",
+    cardImageAnswer: "479-answer.png",
+  },
+  {
+    cardID: 480,
+    deckID: 4,
+    cardQuestion: "Average velocity formula",
+    cardHint: "Change in position versus time traveled",
+    cardAnswer: "Average velocity formula",
+    cardImageQuestion: "",
+    cardImageHint: "",
+    cardImageAnswer: "480-answer.png",
+  },
 ];
+
+
+
+

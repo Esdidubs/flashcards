@@ -65,3 +65,7 @@ button:active {
 header {
     font-size: 26px;
 }
+
+img {
+	max-width: 85%;
+}

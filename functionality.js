@@ -75,17 +75,32 @@ function getCard(){
 }
 
 function getQuestion(){
-    let currentQuestion = getCard().cardQuestion;
+    let currentQuestion;
+    if(getCard().cardImageQuestion.trim() == ''){
+        currentQuestion = getCard().cardQuestion;
+    } else {
+        currentQuestion = `<img src="images/${getCard().cardImageQuestion}" alt="${getCard().cardQuestion}"/>`;
+    }
     return currentQuestion;
 }
 
 function getHint(){
-    let currentHint = getCard().cardHint;
+    let currentHint;
+    if(getCard().cardImageHint.trim() == ''){
+        currentHint = getCard().cardHint;
+    } else {
+        currentHint = `<img src="images/${getCard().cardImageHint}" alt="${getCard().cardHint}"/>`;
+    }
     return currentHint;
 }
 
 function getAnswer(){
-    let currentAnswer = getCard().cardAnswer;
+    let currentAnswer;
+    if(getCard().cardImageAnswer.trim() == ''){
+        currentAnswer = getCard().cardAnswer;
+    } else {
+        currentAnswer = `<img src="images/${getCard().cardImageAnswer}" alt="${getCard().cardAnswer}"/>`;
+    }
     return currentAnswer;
 }
 
